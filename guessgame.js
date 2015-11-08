@@ -47,10 +47,10 @@ var sixthQuestion = prompt("Last but not least. Can you guess how many years I'v
 if (parseInt(sixthQuestion) === married) {
 	alert ("You are a good guesser! And marriage fits in with our theme of things that take a lot of hard work but well worth it.")
 } else {
-	alert("Nope! Guess again. Hint, it's a prime number.");
+	alert("Nope! Hint, it's a prime number.");
 };
 
-prompt("Thanks for playing my true or false game! Did you learn something new about me?");
+prompt("Thanks for playing my true or false game!");
 
 
 ///////////////starting over////

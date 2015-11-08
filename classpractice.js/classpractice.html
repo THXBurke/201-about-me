@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<title>Class Demo</title>
+	<link rel="stylesheet" type="text/css" href="classpractice.css">
+</head>
+
+<body>
+	<h1>All about Dragons</h1>
+	<p> The Dragons, they are alive!</p>
+
+	<a id= "dragons" href= "https://en.wikipedia.org/wiki/Dragon">
+Dragons!</a>
+
+<ul id="myList">
+	<li>Sandwiches</li>
+	<li>Pizzas</>
+	</ul>
+
+	<script>
+	var node = document.createElement("li");
+	var textnode = document.createTextNode("tacos");
+	node.appendChild(textnode);
+	document.getElementById("myList").appendChild(node);
+	</script>
+</body>
