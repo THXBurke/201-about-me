@@ -13,7 +13,7 @@ if (userGuess === "true" || userGuess === "True" || userGuess === "T") {
 	alert("It's true! Now you're surely rivited. Guess again.");
 };
 
-var secondQuestion = prompt("True or False. JavaScript come super easily to me?");
+var secondQuestion = prompt("True or False. JavaScript comes super easily to me?");
 if (userGuess === "true" || userGuess === "True" || userGuess === "T") {
 	alert("Ha! Thanks but false.");
 } else {
@@ -30,7 +30,7 @@ if (userGuess === "true" || userGuess === "True" || userGuess === "T") {
 var age = 35;
 var fourthQuestion = prompt("Can you guess my age?");
 if (parseInt(fourthQuestion) === age ) {
-  alert ("You guessed it! I love getting older. The older you get the more you learn.");
+   alert ("You guessed it! I love getting older. The older you get the more you learn.");
 } else {
   alert("Nope! I'm " + age + "!");
          };
@@ -39,10 +39,18 @@ var fifthQuestion = prompt("Do you think raising children, learning JavaScript a
 if (userGuess === "Yes" || userGuess === "yes" || userGuess === "Y" || userGuess === "True" || userGuess === "true") {
 	alert("Endurance, patience, committment, hard work...you get the idea.")
 } else {
-	alert("Use your imagination!");
+	alert("Seriously? Use your imagination!");
 };
 
-prompt("Thanks for playing my true or false game!");
+var married = 13;
+var sixthQuestion = prompt("Last but not least. Can you guess how many years I've been married?");
+if (parseInt(sixthQuestion) === married) {
+	alert ("You are a good guesser! And marriage fits in with our theme of things that take a lot of hard work but well worth it.")
+} else {
+	alert("Nope! Guess again. Hint, it's a prime number.");
+};
+
+prompt("Thanks for playing my true or false game! Did you learn something new about me?");
 
 
 ///////////////starting over////
