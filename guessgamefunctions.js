@@ -20,7 +20,7 @@ var questions = [
 		["Last but not least. Can you believe I've been married 13 years?", "YES", "Y"]];
 
 
-var pictures = ["./Images-guessgame/stump.jpeg","./Images-guessgame/kidsatglacier.jpg", "./Images-guessgame/Javascript.jpeg","./Images-guessgame/running.jpeg","./Images-guessgame/older.jpeg","./Images-guessgame/endurance.jpeg", "./Images-guessgame/family.JPG"]
+var pictures = ["./Images-guessgame/stump.jpeg","./Images-guessgame/kidsatglacier.jpg", "./Images-guessgame/Javascript.jpeg","./Images-guessgame/running.jpeg","./Images-guessgame/older.jpeg","./Images-guessgame/endurance.jpeg", "./Images-guessgame/family.jpg"]
 
 
 function userGuess() {
@@ -34,6 +34,8 @@ function userGuess() {
 					myimg.innerHTML = "<img src =" + pictures[i]+ " width = '400px' height '400px' >"
 			} else {
 			alert(array[i][2]);
+			var myimg = document.getElementById("myImg" + i);
+			myimg.innerHTML = "<img src = ./Images-guessgame/incorrect.jpg>"
 		}
 	}
 }
