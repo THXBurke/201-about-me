@@ -10,16 +10,28 @@ var array = [
 ["Last but not least. Can you believe I've been married 13 years?", "You are a good guesser! And marriage fits in with our theme of things that take a lot of hard work but well worth it.", "You are a good guesser! And marriage fits in with the theme of things that take a lot of hard work but well worth it."]
 ];
 
+var questions = [
+		["Would you like to play a guessing game?", "YES", "Y"],
+		["True or False. I have three kids?", "TRUE", "T"],
+		["True or False. JavaScript comes super easily to me?", "FALSE", "F"],
+		["True or False. I love long distance running.", "TRUE", "T"],
+		["Do you think being 35 is pretty cool?", "YES", "Y" ],
+		["Do you think raising children, learning JavaScript and long distance running have anything in common?", "YES", "Y"],
+		["Last but not least. Can you believe I've been married 13 years?", "YES", "Y"]];
+
+
+var pictures = ["./Images-guessgame/stump.jpeg","./Images-guessgame/kidsatglacier.jpg", "./Images-guessgame/Javascript.jpeg","./Images-guessgame/running.jpeg","./Images-guessgame/older.jpeg","./Images-guessgame/endurance.jpeg", "./Images-guessgame/family.JPG"]
+
 
 function userGuess() {
-	for (var i = 0; i < array.length; i++){
-			var userGuess = prompt(array[i][0]).toUpperCase();
+	for (var i = 0; i < questions.length; i++){
+			var userGuess = prompt(questions[i][0]).toUpperCase();
 				console.log(userGuess);
-			if (userGuess === "TRUE" || userGuess === "T") {
+			if (userGuess === questions[i][1] || userGuess === questions[i][2]) {
 				alert(array[i][1]);
 					
-					var myimg = document.getElementById("myImg");
-					myimg.innerHTML = <img src ="./Images-guessgame/stump.jpeg">
+					var myimg = document.getElementById("myImg" + i);
+					myimg.innerHTML = "<img src =" + pictures[i]+ " width = '400px' height '400px' >"
 			} else {
 			alert(array[i][2]);
 		}
@@ -27,26 +39,6 @@ function userGuess() {
 }
 
 userGuess(); 
-
-// /////////
-// var firstArray = document.getElementById("Great! I'll try to stump you.");
-// var secondArray = document.getElementById("That's true! I have three kids ages 9, 7 and 4.");
-// var thirdArray = document.getElementById("True that it does not come easily but I am determined to learn!");
-// var fourthArray = document.getElementById("I used to hate it but now I actually really do love it! Gives me time to think.");
-// var fifthArray = document.getElementById("You guessed it! I love getting older. The older you get the more you learn.");
-// var sixthArray = document.getElementById("Endurance, patience, committment, hard work...you get the idea.");
-// var seventhArray = document.getElementById("You are a good guesser! And marriage fits in with the theme of things that take a lot of hard work but well worth it.");
-
-// firstArray.innerHTML = <img src ="image url" height="200px" width="200px"/>
-// secondArray.innterHTML = <img src ="" height="200" width="200px"/>
-// thirdArray.innterHTML = <img src ="" height="200" width="200px"/>
-// forthArray.innterHTML = <img src ="" height="200" width="200px"/>
-// fifthArray.innterHTML = <img src ="" height="200" width="200px"/>
-// sixthArray.innterHTML = <img src ="" height="200" width="200px"/>
-// seventhArray.innterHTML = <img src ="" height="200" width="200px"/>
-
-
-/////
 
 
 
